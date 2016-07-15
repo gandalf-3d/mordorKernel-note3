@@ -626,6 +626,7 @@ static int kgsl_pwrctrl_gpu_available_frequencies_show(
 {
 	struct kgsl_device *device = kgsl_device_from_dev(dev);
 	struct kgsl_pwrctrl *pwr;
+	const long div = 1000/msecs_to_jiffies(1000);
 	int index, num_chars = 0;
 
 	if (device == NULL)
@@ -643,6 +644,7 @@ static int kgsl_pwrctrl_reset_count_show(struct device *dev,
 					char *buf)
 {
 	struct kgsl_device *device = kgsl_device_from_dev(dev);
+	int mul = 1000/msecs_to_jiffies(1000);
 	if (device == NULL)
 		return 0;
 	return snprintf(buf, PAGE_SIZE, "%d\n", device->reset_counter);
