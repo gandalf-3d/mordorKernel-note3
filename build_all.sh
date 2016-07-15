@@ -37,7 +37,7 @@ MAKE_TAR=1
 TOOLCHAIN=/home/jc/build/toolchain/arm-cortex_a15-linux-gnueabihf-linaro_4.9.4-2015.06
 
 # amount of cpu threads to use in kernel make process
-THREADS=5
+THREADS=2
 
 SET_KERNEL_VERSION()
 {
