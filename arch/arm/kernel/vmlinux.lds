@@ -1,7 +1,7 @@
 /*
  *
  * Automatically generated file; DO NOT EDIT.
- * Linux/arm 3.4.111 Kernel Configuration
+ * Linux/arm 3.4.112 Kernel Configuration
  *
  */
 /*
