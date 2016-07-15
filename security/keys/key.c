@@ -442,7 +442,7 @@ static int __key_instantiate_and_link(struct key *key,
 				awaken = 1;
 
 			/* and link it into the destination keyring */
-			if (keyring)
+			if (keyring && link_ret == 0)
 				__key_link(keyring, key, _prealloc);
 
 			/* disable the authorisation key */
